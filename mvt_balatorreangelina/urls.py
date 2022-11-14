@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mvt_balatorreangelina.views import *
+from appfamilia.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', inicio)
+    path('', vista_familia),
+    path('fecha/', fecha_actual),
+    path('familia_entrega/', listado_familiares)
 ]

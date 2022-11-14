@@ -7,7 +7,17 @@
     <title>Desafio MVT</title>
 </head>
 <body>
-    <h1>Bienvenido </h1>
-    <p>Hola! Esta es mi app que esta en construccion. Disculpe las molestias</p>
+    <h1>Lista familiar</h1>
+    <p>Al dia de {{Fecha}} mi familia esta compuesta por:</p>
+    <ul>
+        {% for Nombres in Nombre %}
+            <li> Nombre: {{Nombres}} </li>
+        {% endfor %}
+    </ul>
+    <ul>
+        {% for Edades in Edad %}
+            <li> Edad: {{Edades}} </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
